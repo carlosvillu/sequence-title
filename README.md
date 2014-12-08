@@ -27,7 +27,7 @@ Simple módulo para poder encontrar patrones que corresponden a secuencias dentr
 La finalidad del módulo es la de porpocionar la secuencia completa dando solo una parte de ella.
 Ej.:
 
-```
+```js
 	var sequence = require( 'sequence-title' ),
 		title = "Mi película 2/3";
 	
