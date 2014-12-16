@@ -1,7 +1,7 @@
 class BaseType
 
   constructor: (@string) ->
-  check: -> !!@string.match(@regexp)
+  check: -> Throw new Error 'BaseType#check'
   sequence: -> Throw new Error 'BaseType#range'
 
 
