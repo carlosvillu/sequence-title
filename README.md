@@ -24,6 +24,8 @@ Simple módulo para poder encontrar patrones que corresponden a secuencias dentr
 * Fracionaria: "Mi titulo de película 1/3"
 * Ordinal: "Mi titulo de película 2º parte"
 
+`Puedes ver más tipos en los tests`
+
 La finalidad del módulo es la de porpocionar la secuencia completa dando solo una parte de ella.
 Ej.:
 
