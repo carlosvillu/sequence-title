@@ -11,6 +11,7 @@ TYPES =
   ordinal: [
     'Steve Jobs 2º Parte Discurso con Subtítulos en Español'
     'Los Nuevos HAARP Parte 2 –Todos los HAARP del Mundo'
+    'La Máquina que predice el futuro 2ª parte (el descubrimiento y el proyecto)'
   ]
 
 
@@ -27,6 +28,7 @@ describe 'Sequence', ->
     it 'Cardinal', ->
       expect( Sequence.isSequence( TYPES.ordinal[0] ) ).to.be.true
       expect( Sequence.isSequence( TYPES.ordinal[1] ) ).to.be.true
+      expect( Sequence.isSequence( TYPES.ordinal[2] ) ).to.be.true
 
   describe '::range', ->
 
@@ -65,5 +67,10 @@ describe 'Sequence', ->
       expect( Sequence.sequence( TYPES.ordinal[1] ) ).to.be.eql [
         'Los Nuevos HAARP Parte 1 –Todos los HAARP del Mundo'
         'Los Nuevos HAARP Parte 2 –Todos los HAARP del Mundo'
+      ]
+
+      expect( Sequence.sequence( TYPES.ordinal[2] ) ).to.be.eql [
+        'La Máquina que predice el futuro 1ª parte (el descubrimiento y el proyecto)'
+        'La Máquina que predice el futuro 2ª parte (el descubrimiento y el proyecto)'
       ]
     

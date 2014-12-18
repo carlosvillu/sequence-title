@@ -1,8 +1,8 @@
 class Ordinal extends require './base'
 
   constructor: (@string) ->
-    @regexp_ordinal_first = /\s+(\d+)º?\s(part|parte)/i
-    @regexp_ordinal_last = /\s(part|parte)\s+(\d+)º?/i
+    @regexp_ordinal_first = /\s+(\d+)[º|ª]?\s(part|parte)/i
+    @regexp_ordinal_last = /\s(part|parte)\s+(\d+)[º|ª]?/i
     super @string
 
   check: ->
