@@ -7,6 +7,7 @@ TYPES =
     'El Proyecto Revelación 1/2'
     '24 ORAS Weekend - December 6 2014 FULL EPISODE PART [1/3]'
     'Capítulo 4 de Tierra de Reyes (Parte 1 de 3)'
+    '2/8 Emilio Carrillo en Alozaina Taller'
   ]
   ordinal: [
     'Steve Jobs 2º Parte Discurso con Subtítulos en Español'
@@ -24,6 +25,7 @@ describe 'Sequence', ->
       expect( Sequence.isSequence( TYPES.fractional[1] ) ).to.be.true
       expect( Sequence.isSequence( TYPES.fractional[2] ) ).to.be.true
       expect( Sequence.isSequence( TYPES.fractional[3] ) ).to.be.true
+      expect( Sequence.isSequence( TYPES.fractional[4] ) ).to.be.true
 
     it 'Cardinal', ->
       expect( Sequence.isSequence( TYPES.ordinal[0] ) ).to.be.true
@@ -55,6 +57,17 @@ describe 'Sequence', ->
         'Capítulo 4 de Tierra de Reyes (Parte 1 de 3)'
         'Capítulo 4 de Tierra de Reyes (Parte 2 de 3)'
         'Capítulo 4 de Tierra de Reyes (Parte 3 de 3)'
+      ]
+
+      expect( Sequence.sequence( TYPES.fractional[4] ) ).to.be.eql [
+        '1/8 Emilio Carrillo en Alozaina Taller'
+        '2/8 Emilio Carrillo en Alozaina Taller'
+        '3/8 Emilio Carrillo en Alozaina Taller'
+        '4/8 Emilio Carrillo en Alozaina Taller'
+        '5/8 Emilio Carrillo en Alozaina Taller'
+        '6/8 Emilio Carrillo en Alozaina Taller'
+        '7/8 Emilio Carrillo en Alozaina Taller'
+        '8/8 Emilio Carrillo en Alozaina Taller'
       ]
 
 

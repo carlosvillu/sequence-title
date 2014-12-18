@@ -2,7 +2,7 @@ class Factorial extends require './base'
 
   constructor: (@string) ->
     @regexp = ///
-                \s+   # One space
+                \s?   # One space
                 \[*   # Zero o more open brackets
                 (\d+) # Ordinal position
                 \/    # Separator
@@ -31,12 +31,12 @@ class Factorial extends require './base'
       if( @string.match @regexp )
         @string.replace(
           ///
-            \s+
+            \s?
             \[{0,1}
             (\d+)\/
           ///,
           if @string.match( /\s+\[(\d+)/ ) then " [#{e}/" else " #{e}/"
-        )
+        ).trim()
       else
         parts = @string.split( /\s(\d+\s\w+\s\d+)/i )
         @string.replace(
