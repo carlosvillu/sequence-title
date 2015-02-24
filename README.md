@@ -1,3 +1,6 @@
+[![NPM](https://nodei.co/npm/sequence-titles.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/sequence-titles/)
+
+
 Sequence title
 =============
 
@@ -51,4 +54,3 @@ Ej.:
 
 
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/carlosvillu/sequence-title/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-
